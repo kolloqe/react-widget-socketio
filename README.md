@@ -40,7 +40,33 @@ Then can be attached to any React component as specified below.
 ```jsx
 import KeyboardInput from '@kolloqe/widget-en';
 
-
+<KolloqeChatWidget
+  position={"right"}
+  title="Kolloqe ⚡"
+  subtitle={"Welcome to Kolloqe"}
+  defaultLang={"en"}
+  avatar={true}
+  avatarType={"text"}
+  avatarLink={""}
+  socketURL={"http://localhost:5005/"}
+  initPayload="/greet"
+  reconnectTimeout={6000}
+  widgetOptions={true}
+  fullscreenButton={false}
+  langSwitch={true}
+  moreOptions={true}
+  widgetOptionsPosition={"top"}
+  hideWhenNotConnected={true}
+  displayUnreadCount={true}
+  showMessageDate={true}
+  persistSession={true}
+  triggerIntents={true}
+  enableURLs={true}
+  disablePreviousQuickReplies={true}
+  indicatorDelay={0}
+  indicatorType={"bouncing"}
+  enableShortcuts={true}
+  shortcutKey={81} />
 ```
 
 ## List of Props
