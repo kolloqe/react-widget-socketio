@@ -6,7 +6,7 @@ let root = ReactDOM.createRoot(document.getElementById("demo"));
 root.render(
   <React.StrictMode>
     <KolloqeChatWidget
-      socketURL={"https://thisisishara-personal-rasa-ai-assistant.hf.space"}
+      socketURL={"https://your-sockeio-rasa-bot-url-here/"}
       socketPath="/socket.io/"
       hideWhenNotConnected={false}
     />
