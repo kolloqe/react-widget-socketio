@@ -1,6 +1,6 @@
 {
   "name": "@kolloqe/widget-en",
-  "version": "1.0.1",
+  "version": "1.1.5",
   "private": false,
   "description": "A Rasa socket.io channel supported React chat widget component",
   "main": "lib/index.js",
@@ -9,10 +9,13 @@
     "css",
     "es",
     "lib",
-    "umd"
+    "umd",
+    "dist/*.css",
+    "src/**/*.css",
+    "**/*.css"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -39,7 +42,6 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
     "bootstrap": "^5.2.0",
-    "framer-motion": "^6.5.1",
     "react-scroll-to-bottom": "^4.2.0",
     "react-slick": "^0.29.0",
     "react-string-replace": "^1.1.0",

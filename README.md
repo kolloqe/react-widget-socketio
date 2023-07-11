@@ -61,3 +61,4 @@ Refer the [Official Docs](https://kolloqe.github.io) for more details on passing
 
 - Styling is not supported via props. It should be done manually through overriding relevent CSS classes for now.
 - Snapping to fullscreen is not yet supported. We're working on that!
+- Requires `Node 16.x`

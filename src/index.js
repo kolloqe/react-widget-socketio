@@ -22,10 +22,9 @@ import {
 import { ClickAwayListener } from '@mui/base';
 import { Box } from '@mui/system';
 import React, { Component } from 'react';
-import { motion } from 'framer-motion/dist/framer-motion';
 import PropTypes from 'prop-types';
 import io from 'socket.io-client';
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from 'uuid';
 import { localStorageKeys } from './webchat/configs';
 import ScrollToBottom from 'react-scroll-to-bottom';
 import KeyboardInput from './keyboardInterface/KeyboardInterface';
@@ -45,6 +44,7 @@ export default class KolloqeChatWidget extends Component {
       messageQueue: [],
       widgetOptionsOpen: false,
       widgetOptionsAnchorEl: null,
+      hideWhenNotConnected: false,
     };
 
     // handlers
@@ -461,10 +461,10 @@ export default class KolloqeChatWidget extends Component {
                     height: "560px",
                     zIndex: '1049 !important',
                   }}>
-                  <motion.div
-                    initial={{ y: 6, opacity: 0.5 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.3 }}
+                  <div
+                    // initial={{ y: 6, opacity: 0.5 }}
+                    // animate={{ y: 0, opacity: 1 }}
+                    // transition={{ duration: 0.3 }}
                     className={`kolloqe-widget-bg w-100 h-100 shadow overflow-hidden`}>
                     <Stack
                       direction='column'
@@ -666,7 +666,7 @@ export default class KolloqeChatWidget extends Component {
                         </Box>
                       </Stack>
                     </Stack>
-                  </motion.div>
+                  </div>
                 </Box>
               </ClickAwayListener>
             }

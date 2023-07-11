@@ -14,7 +14,8 @@ module.exports = {
   babel: {
     react: 'automatic',
     cherryPick: [
-      '@mui/material'
+      '@mui/material',
+      'framer-motion'
     ],
     presets: [],
     plugins: []
